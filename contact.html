@@ -1,0 +1,255 @@
+<!-- James Mitchell - 456720473 - ICTWEB505 Develop complex web page layouts - 2018 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Us - Summer Escapes</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" rel="stylesheet"><!-- Social Icons -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"><!-- Google Fonttype -->
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Setup Nav Bar using bootstrap -->
+  <header id="header-wrapper">
+    <nav class="navbar navbar-expand-1100 navbar-light bg-light">
+      <a class="navbar-brand" href="/"><img alt="Summer Getaways" class="d-inline-block align-top logo" src="./img/logo.png"></a> <button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarText" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </em>
+          <li class="nav-item">
+            <a class="nav-link" href="./reviews.html">Reviews<span class="sr-only">(current)</span></a>
+          </em>
+          <li class="nav-item">
+            <a class="nav-link" href="./feedback.html">Feedback</a>
+          </em>
+          <li class="nav-item">
+            <a class="nav-link active" href="./contact.html">Contact</a>
+          </em>
+        </ul>
+        <!--Social Icons - right of nav menu -->
+         <a class="nav-social-link" href="#"><em class="fab fa-facebook-f"></em></a> 
+         <a class="nav-social-link" href="#"><em class="fab fa-twitter"></em></a> 
+         <a class="nav-social-link" href="#"><em class="fab fa-instagram"></em></a> 
+         <a class="nav-social-link" href="#"><em class="fab fa-youtube"></em></a>
+      </div>
+    </nav>
+    <!-- End NavBar -->
+  </header>
+  <!-- End Header -->
+  <!-- Start page content -->
+  <div class="banner mobile-remove"><img alt="Creek located in brisbane QLD" src="./img/contact.jpg"></div>
+  <section>
+    <article>
+      <h1>Contact Us</h1>
+      <div class="grey" id="contact-wrapper">
+        <h2>We would love to hear from you!</h2>
+        <p>Please send us a message using the form below.</p>
+        <form action="javascript:displayAlert();">
+          <div class="contact-item mobile-col">
+            <label class="add-10-left" for="name">Name:</label> <input id="name" name="name" placeholder="Required" required="" type="text">
+          </div>
+          <div class="contact-item mobile-col">
+            <label for="email1">Email:</label> 
+            <input class="add-10-right" id="email1" name="email" placeholder="Required" type="email">
+          </div>
+          <div class="contact-item mobile-col">
+            <label class="add-10-left" for="phone">Phone:</label> <input id="phone" name="phone" type="tel">
+          </div>
+          <div class="contact-item mobile-col">
+            <label for="subject">Subject:</label> <select class="add-10-right" id="subject" name="subject">
+              <option value="Query">
+                General Query
+              </option>
+              <option value="Presale-help">
+                Presale Help
+              </option>
+              <option value="postsale-help">
+                Postsale Help
+              </option>
+              <option value="Cancel">
+                Booking Cancelation
+              </option>
+            </select>
+          </div>
+          <div class="message">
+            <label class="sr-only" for="yourmessage">Your Message</label>
+            <textarea placeholder="Your Message..." id="yourmessage"></textarea>
+            <div id="button-wrapper">
+              <button class="button" type="submit" value="sumbit">Submit</button> <button class="button mobile-remove" type="reset" value="Reset">Reset</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="address-map">
+        <h3>Visit Us</h3>
+        <div class="mobile-col" id="address-map-wrapper">
+          <div id="address">
+            <address>
+              <em>Summer Escapes</em><br>
+              66 Ernest St, South Brisbane<br>
+              QLD 4101<br>
+              <br>
+              <em class="fas fa-envelope"></em>&nbsp; &nbsp;<a href="mailto:contact@summerescapes.com.au?Subject=Hello">contact@summerescapes.com.au</a><br>
+              <em class="fas fa-phone"></em>&nbsp; &nbsp;1300 308 233<br>
+              <em class="fas fa-clock"></em>&nbsp; &nbsp;9am - 5pm<br>
+              <em class="fas fa-sun"></em>&nbsp; &nbsp;Mon - Sat
+            </address>
+          </div>
+          <div id="map">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe height="300" id="gmap_canvas" name="gmap_canvas" src="https://maps.google.com/maps?q=tafe%20qld%20southbank&t=&z=15&ie=UTF8&iwloc=&output=embed" width="300"></iframe>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- Sidebar -->
+    <aside>
+      <h4>Popular Destinations</h4>
+      <div id="pop-dest-wrapper">
+        <!--  Pop Destination 1 -->
+        <div class="pop-dest">
+          <a href="#"><span class="clickable"></span></a> <img alt="Waterside Hut Resort loacated at the Gold Coast, QLD. Rated 4 stars" src="./img/review1.jpg">
+          <p>Waterside Hut Resort<br>
+          Gold Coast, QLD<br>
+          <em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="far fa-star"></em></p>
+          <p class="sr-only">4 Stars</p>
+        </div>
+        <!--  Pop Destination 2 -->
+        <div class="pop-dest">
+          <a href="#"><span class="clickable"></span></a> <img alt="Canopy Beach located at Arlie Beach, QLD. Rated 5 stars" src="./img/review3.jpg">
+
+          <p>Canopy Beach<br>
+          Arlie Beach, QLD<br>
+         <em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em></p>
+          <p class="sr-only">5 Stars</p>
+        </div>
+        <!--  Pop Destination 3 -->
+        <div class="pop-dest">
+          <a href="#"><span class="clickable"></span></a> <img alt="Sea Plane Getaway located in Byron Bay, NSW. Rated 3 stars" src="./img/review5.jpg">
+          <p>Sea Plane Getaway<br>
+          Byron Bay, NSW<br>
+          <em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="far fa-star"></em><em class="far fa-star"></em></p>
+          <p class="sr-only">3 Stars</p>
+        </div>
+        <!--  Pop Destination 4 -->
+        <div class="pop-dest">
+          <a href="#"><span class="clickable"></span></a> <img alt="Moutains locared at Toowong, QLD. Rated 5 stars" src="./img/review8.jpg">
+          <p>Mountains<br>
+          Toowong, QLD<br>
+          <em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em></p>
+          <p class="sr-only">5 Stars</p>
+        </div>
+      </div>
+      <div id="sidebar-social">
+        <h4>Follow Us</h4>
+        <div class="sidebar-social-buttons">
+          <a href="#"><em class="fab fa-facebook-f"></em></a> <a href="#"><em class="fab fa-twitter"></em></a> <a href="#"><em class="fab fa-instagram"></em></a> <a href="#"><em class="fab fa-youtube"></em></a>
+        </div>
+      <h4>Visit Our Sponsors</h4><a href="#"><img alt="advertisment" class="ad" src="./img/ad.jpg"></a> <a href="#"><img alt="advertisment" class="ad" src="./img/ad.jpg"></a>
+    </aside>
+  </section>
+  <!-- End page content -->
+ <!-- Start Footer -->
+    <footer>
+      <div id="footer">
+        <div class="mobile-col" id="footer-wrapper">
+          <div class="centerizer mobile-remove">
+            <!-- Application to add padding -->
+            <div class="footer-col" id="mis-stat">
+              <h5>
+                Our Commitment To You
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in est eget lacus fringilla ultricies. Morbi dapibus et lorem vel rhoncus. Vivamus tortor dolor, euismod nec efficitur sit amet, varius id neque. Ut nec tempor nisl, ac tincidunt ante. Pellentesque aliquet sapien ut mollis suscipit. Phasellus sagittis auctor tellus eu mollis.
+              </p>
+            </div>
+          </div>
+          <div class="centerizer mobile-remove">
+            <!-- Nav Links -->
+            <div class="footer-col" id="footer-links">
+              <h5>
+                Navigation
+              </h5><a class="footer-link" href="#">Home</a> <a class="footer-link" href="#">Reviews</a> <a class="footer-link" href="#">Feedback</a> <a class="footer-link" href="#">Contact</a> <a class="footer-link" href="#">Privacy Policy</a> <a class="footer-link backtotop" href="#">Back To Top</a>
+            </div>
+          </div>
+          <div class="centerizer mobile-remove">
+            <!-- Address Section -->
+            <div class="footer-col" id="footer-contact">
+              <h5>
+                Contact Us
+              </h5>
+              <address>
+                <em>Summer Escapes</em><br>
+                66 Ernest St, South Brisbane<br>
+                QLD 4101<br>
+                <br>
+                <em class="fas fa-envelope"></em>&nbsp; &nbsp;<a href="mailto:contact@summerescapes.com.au?Subject=Hello">contact@summerescapes.com.au</a><br>
+                <em class="fas fa-phone"></em>&nbsp; &nbsp;1300 308 233<br>
+                <em class="fas fa-clock"></em>&nbsp; &nbsp;9am - 5pm Mon - Sat
+              </address>
+            </div>
+          </div>
+          <div class="centerizer footer-email">
+            <!--  Subscribe Input -->
+            <div class="footer-col reverse" id="footer-sub-social">
+              <form action="javascript:displayAlert();">
+                <label class="sr-only" for="email">Enter Email Address to subscribe to newsletter</label> <input id="email" name="email" type="email" value="Email"> <input class="modalbutton" type="submit" value="Subscribe">
+              </form>
+              <div>
+                <a class="footer-link backtotop only-mobile" href="#">Back To Top</a>
+              </div>
+              <!-- Social Media Buttons - Footer -->
+              <div>
+                <h5>
+                  Get Social With Us
+                </h5><a class="footer-social-link" href="#"><em class="fab fa-facebook-f"></em></a> <a class="footer-social-link" href="#"><em class="fab fa-twitter"></em></a> <a class="footer-social-link" href="#"><em class="fab fa-instagram"></em></a> <a class="footer-social-link" href="#"><em class="fab fa-youtube"></em></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End footer id -->
+      <div id="copy">
+        <p>
+          Summer Escapes &copy; 2018
+        </p>
+      </div>
+      <div id="dev">
+<a href="http://iamjmitch.com"><img src="http://salscupcakes.iamjmitch.com/wp-content/themes/sal/Images/jmlogo.png"></a>
+</div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Bootsrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+    </script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+    </script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script> 
+
+    <!-- Submit onclick function -->
+    <script>
+    function displayAlert() {
+     alert("Your message has been received. Thankyou");
+    }
+    </script> 
+
+    <!-- Back to top functionality  -->
+    <script>
+    function scrollTop() {
+       document.body.scrollTop = 0; 
+       document.documentElement.scrollTop = 0; 
+    }
+    </script>
+  </body>
+</html>
+
+<!-- James Mitchell - 456720473 - ICTWEB505 Develop complex web page layouts - 2018 -->
